@@ -1,0 +1,9 @@
+path: /home/user/pt_aicup/AICUP_Baseline_BoT-SORT/datasets/AI_CUP_MCMOT_dataset/yolo  # dataset root dir
+train: train  # train images (relative to 'path') 118287 images
+val: valid  # val images (relative to 'path') 5000 images
+test: valid  # 20288 of 40670 images, submit to https://competitions.codalab.org/competitions/20794
+
+# Classes
+names:
+  0: car
+  
