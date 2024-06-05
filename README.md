@@ -1,19 +1,19 @@
 # Installation
 **The code was tested on Ubuntu 22.04**
 
-** 1.** Create Conda environment and install pytorch.
+ 1. Create Conda environment and install pytorch.
 ```shell
 conda create -n botsort python=3.7
 conda activate botsort
 ```
 
-** 2.** Install torch and matched torchvision
+ 2. Install torch and matched torchvision
 for this code use following version
 ```shell
 pip install torch==1.13.1+cu117 torchvision==0.14.1+cu117 torchaudio==0.13.1 --extra-index-url https://download.pytorch.org/whl/cu117
 ```
 
-** 3.**Download this Repository to your Computer
+ 3. Download this Repository to your Computer
 ```shell
 git clone https://github.com/john92803/AI_CUP_Result
 cd AI_CUP_Result
@@ -21,27 +21,27 @@ export  PYTHONPATH=${PYTHONPATH}:"."
 echo ${PYTHONPATH}
 ```
 
-** 4.** **Install numpy **
+ 4. Install numpy 
 ```shell
 pip install numpy
 ```
 
-** 5.** Install `requirements.txt`
+ 5. Install `requirements.txt`
 ```shell
 pip install -r requirements.txt
 ```
 
-** 6.** Install `requirements.txt` for yolov9
+ 6. Install `requirements.txt` for yolov9
 ```shell
 pip install -r yolov9/requirements.txt
 ```
 
-** 7.** Install `cython`
+ 7. Install `cython`
 ```shell
 pip install cython
 ```
 
-** 8.** Install others
+ 8. Install others
 ```shell
 # Cython-bbox
 pip install cython_bbox
