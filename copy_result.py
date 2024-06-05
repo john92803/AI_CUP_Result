@@ -18,7 +18,7 @@ def copy_txt_files(source_dir, dest_dir):
                     shutil.copyfile(src_file, dst_file)
 
 if __name__ == "__main__":
-    source_dir = "/home/user/pt_aicup/AICUP_Baseline_BoT-SORT/runs/detect"
-    dest_dir = "/home/user/pt_aicup/AICUP_Baseline_BoT-SORT/runs/test_res"
+    source_dir = "/runs/detect"
+    dest_dir = "/runs/yolov9_res"
 
     copy_txt_files(source_dir, dest_dir)
