@@ -7,7 +7,7 @@ conda create -n botsort python=3.7
 conda activate botsort
 ```
 
- 2. Install torch and matched torchvision
+ 2. Install torch and matched torchvision<br>
 for this code use following version
 ```shell
 pip install torch==1.13.1+cu117 torchvision==0.14.1+cu117 torchaudio==0.13.1 --extra-index-url https://download.pytorch.org/whl/cu117
@@ -52,7 +52,7 @@ pip install faiss-gpu
 ```
 
 ## Data Preparation
-Download the AI_CUP dataset and create a new Folder
+Download the AI_CUP dataset and create a new Folder<br>
 put the dataset into new Folder
 ```shell
 mkdir data
@@ -80,7 +80,7 @@ python fast_reid/datasets/generate_AICUP_patches.py --data_path data/train
 ```shell
 python yolov7/tools/AICUP_to_YOLOv7.py --AICUP_dir data/train --YOLOv7_dir datasets/AI_CUP_MCMOT_dataset/yolo
 ```
-There will have a new floder:datasets
+There will have a new floder:datasets<br>
 there's yolo format dataset in `datasets`
 
 ## Training (Fine-tuning)
@@ -89,7 +89,7 @@ there's yolo format dataset in `datasets`
 ```shell
 python3 fast_reid/tools/train_net.py --config-file fast_reid/configs/AICUP/bagtricks_R50-ibn.yml MODEL.DEVICE "cuda:0"
 ```
-You can change batchsize in `fast_reid/configs/AICUP/bagtricks_R50-ibn.yml`
+You can change batchsize in `fast_reid/configs/AICUP/bagtricks_R50-ibn.yml`<br>
 If you see MoudleNotFoundError: No moudle named 'fast_reid.fastreid.evaluation.rank_cylib.rank_cy', it mean done for Re-ID training
 
 ### Fine-tune YOLOv9
@@ -102,8 +102,8 @@ Download yolov9 pretrained weight `yolov9-e.pt`
 wget https://github.com/WongKinYiu/yolov9/releases/download/v0.1/yolov9-e.pt
 ```
 
-**important**
-you need to change path config in yolov9/dataset/coco.yaml !!!!!!!!!!
+**important**<br>
+you need to change path config in yolov9/dataset/coco.yaml !!!!!!!!!!<br>
 e.x. path: /home/AI_CUP_Result/datasets/AI_CUP_MCMOT_dataset/yolo
 
 ```shell
@@ -133,13 +133,13 @@ Copy result txt(check your source folder and destination folder in `copy_result.
 python copy_result.py
 ```
 
-run `tools/evaluate.py` to score your submission
+run `tools/evaluate.py` to score your submission<br>
 There's 12 .txt file in --gt_dir and --ts_dir
 ```bash
 python tools/evaluate.py --gt_dir "/runs/MOT15" --ts_dir "yolov9_res"
 ```
 
-Then you can get the result:
+Then you can get the result:<br>
 ![](yolov9_2.png)
 ## Citation
 
