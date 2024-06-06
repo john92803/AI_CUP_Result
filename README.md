@@ -141,16 +141,6 @@ python tools/evaluate.py --gt_dir "/runs/MOT15" --ts_dir "yolov9_res"
 
 Then you can get the result:<br>
 ![](yolov9_2.png)
-## Citation
-
-```
-@article{aharon2022bot,
-  title={BoT-SORT: Robust Associations Multi-Pedestrian Tracking},
-  author={Aharon, Nir and Orfaig, Roy and Bobrovsky, Ben-Zion},
-  journal={arXiv preprint arXiv:2206.14651},
-  year={2022}
-}
-```
 
 
 ## Acknowledgement
