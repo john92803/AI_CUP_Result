@@ -116,7 +116,7 @@ your output weight will in yolov9/runs/yolov9-e/weight/best.pt
 You should change `--weights` and `--fast-reid-weights` with your own path
 ```shell
 cd <AI_CUP_Result>
-bash tools/track_all_timestamps.sh --weights "" --source-dir "data/train/images" --device "0" --fast-reid-config "fast_reid/configs/AICUP/bagtricks_R50-ibn.yml" --fast-reid-weights "logs/AICUP/bagtricks_R50-ibn/model_00xx.pth"
+bash tools/track_all_timestamps_v9.sh --weights "" --source-dir "data/train/images" --device "0" --fast-reid-config "fast_reid/configs/AICUP/bagtricks_R50-ibn.yml" --fast-reid-weights "logs/AICUP/bagtricks_R50-ibn/model_00xx.pth"
 ```
 
 result will save in `runs/detect`
