@@ -136,7 +136,7 @@ python copy_result.py
 run `tools/evaluate.py` to score your submission<br>
 There's 12 .txt file in --gt_dir and --ts_dir
 ```bash
-python tools/evaluate.py --gt_dir "/runs/MOT15" --ts_dir "yolov9_res"
+python tools/evaluate.py --gt_dir "/runs/MOT15" --ts_dir "/runs/yolov9_res"
 ```
 
 Then you can get the result:<br>
