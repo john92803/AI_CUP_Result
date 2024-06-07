@@ -18,6 +18,7 @@ def copy_txt_files(source_dir, dest_dir):
                     shutil.copyfile(src_file, dst_file)
 
 if __name__ == "__main__":
+    #Please check your dir 
     source_dir = "/runs/detect"
     dest_dir = "/runs/yolov9_res"
 
