@@ -102,14 +102,14 @@ Download yolov9 pretrained weight `yolov9-e.pt`
 wget https://github.com/WongKinYiu/yolov9/releases/download/v0.1/yolov9-e.pt
 ```
 
-**important**<br>
-you need to change path config in yolov9/dataset/coco.yaml !!!!!!!!!!<br>
+**Important**<br>
+you need to change path config in `yolov9/dataset/coco.yaml` !!!!!!!!!!<br>
 e.x. path: /home/AI_CUP_Result/datasets/AI_CUP_MCMOT_dataset/yolo
 
 ```shell
 python train_dual.py --workers 8 --device 0 --batch 16 --data dataset/coco.yaml --img 1280 --cfg dataset/yolov9-e.yaml --weights yolov9-e.pt --name yolov9-e --hyp hyp.scratch-high.yaml --min-items 0 --epochs 50 --close-mosaic 1
 ```
-your output weight will in yolov9/runs/yolov9-e/weight/best.pt
+Your output weight will in yolov9/runs/yolov9-e/weight/best.pt
 
 ## Tracking and creating the submission file for yolov9
 
