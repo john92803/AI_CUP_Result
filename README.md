@@ -89,7 +89,7 @@ there's yolo format dataset in `datasets`
 ```shell
 python3 fast_reid/tools/train_net.py --config-file fast_reid/configs/AICUP/bagtricks_R50-ibn.yml MODEL.DEVICE "cuda:0"
 ```
-You can change batchsize in `fast_reid/configs/AICUP/bagtricks_R50-ibn.yml`<br>
+You can change batchsize(IMS_PER_BATCH) in `fast_reid/configs/AICUP/bagtricks_R50-ibn.yml`<br>
 If you see MoudleNotFoundError: No moudle named 'fast_reid.fastreid.evaluation.rank_cylib.rank_cy', it mean done for Re-ID training
 
 ### Fine-tune YOLOv9
